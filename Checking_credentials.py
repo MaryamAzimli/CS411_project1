@@ -11,10 +11,12 @@ users = {
     "accountant": {"username": "account1", "password": "accountpass"}
 }
 
+
 @app.route('/')
 def home():
     # Serve the public.html file directly from the current directory
     return send_from_directory('.', 'public.html')
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -29,6 +31,7 @@ def login():
             return jsonify({"success": True, "message": "Logged in successfully", "role": role.capitalize()})
 
     return jsonify({"success": False, "message": "Failed to log in"})
+
 
 if __name__ == "__main__":
     app.run(debug=True)
