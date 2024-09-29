@@ -6,12 +6,14 @@ To run this project, you will need the following:
     Python 3.x
     Flask (Python package)
     A web browser (Chrome, Firefox, Edge, etc.)
+    Pycharm
 
 
 
 # How to Run:
-
+    
     clone repo
+    open PyCharm
     cd CS411_project1
 
 **Installing Dependencies:**
